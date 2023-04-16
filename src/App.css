@@ -1,38 +1,217 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header {
+  display: grid;
+  grid-template-columns: [first] 1em [line2] 3em [line3] auto [col4-start] 3em [five] 1em [end];
+  grid-template-areas: ". . logo ham .";
+  background-color: white;
+  height: 6em;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: .4em .4em 4em black;
+
+}
+.header-logo {
+  flex: 1;
+  padding-right: 9em;
+  margin:0em;
+  max-width: 5.8em;
+  max-height: 5.5em;
+  grid-area:logo;
+  place-self:center;
+}
+.JMHlogo {
+max-width: 16.8em;
+max-height: 5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Hambutton {
+  grid-area: ham;
+  display:grid;
+}
+.hamb {
+  font-size:210%;
+  place-self:center;
+}
+
+/* navigation menu */
+
+
+
+
+/*end of header content */
+
+.homepage-wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height:98vh;
+  background-image: url('./pics/pcswithcode.jpg');
+  background-size: 1920px 1080px;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #b2b3b7;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+
+}
+.flex-box1 {
+  flex:1
+}
+.flex-box2 {
+  flex:1;
+  color: white;
+  align-items: center;
+  font-family : Raleway ,sans-serif;
+  font-size: xx-large;
+  text-shadow: 1px 1px 1px black;
+  animation-name: entry-effect;
+  animation-duration: 2s;
+}
+.welcome-text {
+  flex:1;
+}
+.homepage-img {
+  width:fit-content;
+}
+.about-page {
+  background-color: #252D52;
+  height: 1080px;
+  color: white;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.about-heading h1{
+  margin: 0;
+  padding-top:.75em;
+  font-size: 470%;
+  color: white;
+  font-family: 'gill-sans', sans-serif;
+  text-decoration: none;
+  padding-bottom: .25em;
+  justify-content: top;
+  align-self: top;
+}
+
+.about-heading h2{
+  font-size: 250%;
+}
+.headshot {
+  border-radius: 15px;
+  width: clamp(10em,20em,30em);
+  height: clamp(10em,20em,30em);
+}
+
+.about-p {
+  max-width: 500px;
+  padding-bottom:1em;
+  font-size: 175%;
+  font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+  max-width: 825px;
+}
+
+/*End of about page*/
+
+.services-page {
+  height: 80em;
+}
+.services-heading {
+  margin: 0;
+  font-size: 425%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-family: 'gill-sans', sans-serif;
+  text-decoration: none;
+}
+.icon-wrapper {
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.responsive {
+
+}
+.customcoded {
+
+}
+.animated {
+
+}
+.icon-wrapper p{
+  font-size: larger;
+}
+.icons {
+width: 10em;
+height: 10em;
+margin:0em;
+padding:.5em;
+
+}
+.serviceButtonWrap {
+  padding-top:1.5em;
+}
+.servicesButton {
+  padding:.4em;
+  color:white;
+  background-color: #252D52;
+  font-size: 32px;
+  border:none;
+  border-radius:15px;
+}
+
+
+.footer {
+  height: 10em;
+  background-color: white;
+}
+.footerList {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+}
+
+.footerItems {
+  list-style: none;
+}
+/*Media Queries*/
+
+/*
+@media (min-width:800px) {
+  .app-header {
+    background-color: rgba(0,0,0,.3);
+  }
+}
+*/
+
+@media (min-width:400px) {
+  .serviceButtonWrap {
+    padding-top:3.3em;
+  }
+}
+@media (min-width: 1000px) {
+  .icon-wrapper {
+
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/*Animations*/
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes entry-effect {
   from {
-    transform: rotate(0deg);
+    opacity:0%;
+    transform: translate(0em,-2em);
+    animation: ease-in;
   }
   to {
-    transform: rotate(360deg);
+    opacity:100%;
+    transform: translate(0em,0em)
   }
 }
