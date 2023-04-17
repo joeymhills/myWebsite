@@ -27,11 +27,8 @@ function App() {
          <div className= "header-logo">
             <img src = {mobilelogo} className= "JMHlogo" alt="" />
          </div>
-         
-        <div className="Hambutton">
-         <i class="fa-solid fa-bars hamb"></i>
-        </div>
       </header>
+
       
       <div className="homepage-wrapper">
         <div className="flex-box2">
