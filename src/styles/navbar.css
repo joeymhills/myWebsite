@@ -22,10 +22,11 @@ header {
     width:100%;
 	align-items: center;
 	justify-content: space-between;
-	height: 5.25em;
+	height: 5.75em;
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+	box-shadow: 0em 0em 2em .9em rgb(0, 0, 0);
 }
 .logo {
     max-width: 16.8em;
