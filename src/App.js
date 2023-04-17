@@ -46,7 +46,7 @@ function App() {
             <div className="customCoded">
               <h2>Custom Coded</h2>
               <img src={coding} className='icons' alt='' />
-              <p>Custom coded to look unique and profesional</p>
+              <p>Custom coded to look unique and professional</p>
             </div>
             <div className="responsive">
               <h2>Responsive</h2>
