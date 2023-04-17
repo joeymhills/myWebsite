@@ -1,7 +1,5 @@
 import './App.css';
 import headshot from './pics/headshot.jpeg'
-import Component from 'react'
-import React,{useEffect, useState} from 'react'
 import mobilelogo from './pics/JMHlogo.png'
 import coding from './icons/coding.png'
 import responsive from './icons/responsive.png'
