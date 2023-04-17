@@ -5,6 +5,9 @@ import coding from './icons/coding.png'
 import responsive from './icons/responsive.png'
 import animation from './icons/animation.png'
 import NavBar from './components/navbar.js'
+import {FaPhone} from 'react-icons/fa';
+import{MdOutlineMailOutline} from 'react-icons/md'
+
 
 function App() {
   return (
@@ -77,9 +80,9 @@ function App() {
       </div>
       <footer className="footer">
         <div className='footerList'>
-          <h3 className='footerItems'>Phone: 203-361-8525</h3>
-          <h3 className='footerItems'>Email: Joeymhills@gmail.com</h3>
-          <h3 className='footerItems'>Copyright 2023</h3>
+          <h3 className='footerItems'><FaPhone/> : 203-361-8525</h3>
+          <h3 className='footerItems'><MdOutlineMailOutline/> : Joeymhills@gmail.com</h3>
+          <h3 className='footerItems'>&#169;Copyright 2023</h3>
         </div>
       </footer>
     </div>
