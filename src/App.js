@@ -76,11 +76,11 @@ function App() {
         </p>
       </div>
       <footer className="footer">
-        <ul className='footerList'>
-          <li className='footerItems'>Phone: 203-361-8525</li>
-          <li className='footerItems'>Email: Joeymhills@gmail.com</li>
-          <li className='footerItems'>Copyright 2023</li>
-        </ul>
+        <div className='footerList'>
+          <h3 className='footerItems'>Phone: 203-361-8525</h3>
+          <h3 className='footerItems'>Email: Joeymhills@gmail.com</h3>
+          <h3 className='footerItems'>Copyright 2023</h3>
+        </div>
       </footer>
     </div>
   );

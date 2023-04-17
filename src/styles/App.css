@@ -5,29 +5,6 @@
   font-family : 'Raleway' ,sans-serif;
 }
 
-.app-header {
-  display: grid;
-  grid-template-columns: [first] 1em [line2] 3em [line3] auto [col4-start] 3em [five] 1em [end];
-  grid-template-areas: ". . logo ham .";
-  background-color: white;
-  height: 6em;
-  position:fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: .4em .4em 4em black;
-  z-index:999;
-
-}
-.header-logo {
-  flex: 1;
-  padding-right: 9em;
-  margin:0em;
-  max-width: 5.8em;
-  max-height: 5.5em;
-  grid-area:logo;
-  place-self:center;
-}
 .JMHlogo {
 max-width: 16.8em;
 max-height: 5em;
@@ -69,7 +46,7 @@ max-height: 5em;
   font-size: 250%;
   text-shadow: 1px 1px 1px black;
   animation-name: entry-effect;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
 }
 .welcome-text {
   flex:1;
@@ -98,6 +75,8 @@ max-height: 5em;
 }
 
 .about-heading h2{
+  padding-top: .5em;
+  padding-bottom: .5em;
   font-size: 250%;
 }
 .headshot {
@@ -158,8 +137,11 @@ padding:.5em;
 
 
 .footer {
-  height: 10em;
+  height: 5em;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footerList {
   list-style-type: none;
@@ -168,7 +150,8 @@ padding:.5em;
 }
 
 .footerItems {
-  list-style: none;
+  padding: 1em;
+  bottom:1em;
 }
 /*Media Queries*/
 
