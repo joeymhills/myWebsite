@@ -1,6 +1,7 @@
 import {FaBars,FaTimes} from 'react-icons/fa';
 import {useRef} from 'react'
 import React from 'react'
+import {Link} from 'react-router-dom'
 import '../styles/navbar.css'
 import logo from "../pics/JMHlogo.png"
 
@@ -14,13 +15,26 @@ function NavBar() {
 	};
 
 	return (
+	<div>
 		<header>
 			<img src={logo} className="logo" alt=''/>
 			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">Services</a>
-				<a href="/#">About</a>
-                <a href="/#">Contact</a>
+				
+				<div className='a'>
+					<Link to ="/">Home</Link>
+				</div>
+				
+				<div className='a'>
+					<Link to ="/Services">Services</Link>
+				</div>
+				
+				<div className='a'>
+
+					<Link to ="/#">About</Link>
+				</div>
+				<div className='a'>
+					<Link to ="/#">Contact</Link>
+				</div>
 
 				<button
 					className="nav-btn nav-close-btn"
@@ -33,7 +47,8 @@ function NavBar() {
 				onClick={showNavbar}>
 				<FaBars />
 			</button>
-		</header>
+	</header>
+		</div>
 	);
 }
 

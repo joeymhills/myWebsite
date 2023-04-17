@@ -98,6 +98,10 @@ max-height: 5em;
 .services-page {
   height: 80em;
 }
+.services-page2 {
+  height:70em;
+  padding-top: 6em;
+}
 .services-heading {
   margin: 0;
   font-size: 425%;
@@ -175,7 +179,7 @@ padding:.5em;
     align-items: center;
     justify-content: center;
     align-content: center;
-    height: 8em;
+    height: 7em;
   }
 }
 /*Animations*/

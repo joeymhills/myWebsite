@@ -33,20 +33,20 @@ header {
     max-height: 5em;
     }
 
-nav a {
+nav .a {
 	margin: 0em 1.5em 0em;
 	color: var(--textColor);
 	text-decoration: none;
 	font-size:large
 }
 
-nav a:hover {
+nav .a:hover {
 	color: var(--secondaryColor);
 	text-decoration-style:underline;
 }
 
 header .nav-btn {
-	padding: 5px;
+	padding-right: 1em;
 	cursor: pointer;
 	background: transparent;
 	border: none;
@@ -91,11 +91,11 @@ nav {
 
 	nav .nav-close-btn {
 		position: absolute;
-		top: 2rem;
-		right: 2rem;
+		top: 1em;
+		right: 1em;
 	}
 
-	nav a {
+	nav .a {
 		font-size: 1.5rem;
 	}
 }
