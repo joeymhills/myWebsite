@@ -71,7 +71,7 @@ function App() {
         to make fast, responsive, and professional websites.
         </p>
         <p className="about-p">
-            I'm profecient in HTML, CSS, JavaScript, and Python, along with
+            I'm proficient in HTML, CSS, JavaScript, and Python, along with
           popular frameworks these languages use such as React and Django.
         </p>
       </div>
