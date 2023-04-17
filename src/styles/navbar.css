@@ -5,6 +5,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Raleway", sans-serif;
+
 }
 
 :root {
@@ -54,6 +55,7 @@ header div,
 nav {
 	display: flex;
 	align-items: center;
+    z-index:999;
 }
 
 @media only screen and (max-width: 800px) {
