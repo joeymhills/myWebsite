@@ -33,15 +33,6 @@ max-width: 16.8em;
 max-height: 5em;
 }
 
-.Hambutton {
-  grid-area: ham;
-  display:grid;
-}
-.hamb {
-  font-size:210%;
-  place-self:center;
-}
-
 /* navigation menu */
 
 

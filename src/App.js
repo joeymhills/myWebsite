@@ -1,9 +1,13 @@
 import './styles/App.css';
+import './styles/navbar.css'
 import headshot from './pics/headshot.jpeg'
 import mobilelogo from './pics/JMHlogo.png'
 import coding from './icons/coding.png'
 import responsive from './icons/responsive.png'
 import animation from './icons/animation.png'
+import NavBar from './components/navbar.js'
+import {FaBars,FaTimes} from 'react-icons/fa';
+import{useRef} from 'react'
 
 function App() {
   return (
@@ -23,12 +27,15 @@ function App() {
         <title>JMH Web Design</title>
       </head>
       
+      {/*
       <header className="app-header">
          <div className= "header-logo">
             <img src = {mobilelogo} className= "JMHlogo" alt="" />
          </div>
       </header>
+      */}
 
+      <NavBar/>
       
       <div className="homepage-wrapper">
         <div className="flex-box2">
