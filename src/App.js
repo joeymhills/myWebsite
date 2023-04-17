@@ -78,7 +78,7 @@ function App() {
         </div>
         <p className="about-p">
           I'm Joey Hills, a full-stack web developer from Milford, Connecticut. I specialize in working with businesses
-        to make fast, responsive, and profesional websites.
+        to make fast, responsive, and professional websites.
         </p>
         <p className="about-p">
             I'm profecient in HTML, CSS, JavaScript, and Python, along with
