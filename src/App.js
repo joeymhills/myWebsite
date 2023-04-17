@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import headshot from './pics/headshot.jpeg'
 import mobilelogo from './pics/JMHlogo.png'
 import coding from './icons/coding.png'
