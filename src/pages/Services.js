@@ -4,7 +4,7 @@ import coding from '../icons/coding.png'
 import responsive from '../icons/responsive.png'
 import animation from '../icons/animation.png'
 
-const Home = () => {
+const Services = () => {
     return (
       <div className="app">
         <head>
@@ -52,4 +52,4 @@ const Home = () => {
   }
   
   
-  export default Home;
+  export default Services;

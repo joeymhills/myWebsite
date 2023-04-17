@@ -4,6 +4,9 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import '../styles/navbar.css'
 import logo from "../pics/JMHlogo.png"
+import {NavLink} from 'react-router-dom'
+import styled from 'styled-components';
+
 
 function NavBar() {
 	const navRef = useRef();
@@ -29,11 +32,10 @@ function NavBar() {
 				</div>
 				
 				<div className='a'>
-
-					<Link to ="/#">About</Link>
+					<Link to ="/About">About</Link>
 				</div>
 				<div className='a'>
-					<Link to ="/#">Contact</Link>
+					<Link to ="/Contact">Contact</Link>
 				</div>
 
 				<button
