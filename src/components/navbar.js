@@ -1,57 +1,34 @@
-import {FaBars,FaTimes} from 'react-icons/fa';
-import {useRef} from 'react'
-import React from 'react'
-import {Link} from 'react-router-dom'
-import '../styles/navbar.css'
-import logo from "../pics/JMHlogo.png"
-import {NavLink} from 'react-router-dom'
-import styled from 'styled-components';
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import logo from '../pics/JMHlogo.png'
 
+import '../styles/styles.css'
+import '../styles/App.css'
 
-function NavBar() {
-	const navRef = useRef();
-
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
-
-	return (
-	<div>
-		<header>
-			<img src={logo} className="logo" alt=''/>
-			<nav ref={navRef}>
-				
-				<div className='a'>
-					<Link to ="/">Home</Link>
-				</div>
-				
-				<div className='a'>
-					<Link to ="/Services">Services</Link>
-				</div>
-				
-				<div className='a'>
-					<Link to ="/About">About</Link>
-				</div>
-				<div className='a'>
-					<Link to ="/Contact">Contact</Link>
-				</div>
-
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
-			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
-	</header>
-		</div>
-	);
+export default function Navbar() {
+  return (
+    <>
+    <img className="JMHlogo" src = {logo} />
+        <nav className="nav">
+        <ul>
+            <CustomLink to="/">Home</CustomLink>
+            <CustomLink to="/services">Services</CustomLink>
+            <CustomLink to="/about">About</CustomLink>
+            <CustomLink to="/contact">Contact</CustomLink>
+        </ul>
+        </nav>
+    </>
+  )
 }
 
-export default NavBar;
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  )
+}

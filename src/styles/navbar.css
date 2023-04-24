@@ -42,7 +42,7 @@ header {
 
 .a:hover {
 	color: var(--secondaryColor);
-	text-decoration-style:;
+	text-decoration-style: none;
 }
 
 header .nav-btn {

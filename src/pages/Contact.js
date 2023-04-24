@@ -4,7 +4,7 @@ import headshot from '../pics/headshot.jpeg'
 import coding from '../icons/coding.png'
 import responsive from '../icons/responsive.png'
 import animation from '../icons/animation.png'
-import NavBar from '../components/navbar.js'
+import NavBar from '../components/NavBar.js'
 import Footer from '../components/footer.js'
 
 const Contact = () => {

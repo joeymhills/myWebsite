@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../components/navbar.js'
+import NavBar from '../components/NavBar.js'
 import coding from '../icons/coding.png'
 import responsive from '../icons/responsive.png'
 import animation from '../icons/animation.png'

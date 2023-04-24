@@ -6,8 +6,12 @@
 }
 
 .JMHlogo {
+position: fixed;
+z-index:10;
 max-width: 16.8em;
 max-height: 5em;
+left:1em;
+top:.5em;
 }
 
 /* navigation menu */
@@ -173,13 +177,13 @@ padding:.5em;
     padding-top:3.3em;
   }
 }
-@media (min-width:800px) {
+@media (max-width:900px) {
   .footerList {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     align-content: center;
-    height: 7em;
+    height: 8em;
   }
 }
 /*Animations*/
